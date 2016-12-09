@@ -5,6 +5,25 @@
 #### Install Exponent [XDE and mobile client](https://docs.getexponent.com/versions/v11.0.0/introduction/installation.html)
     If you don't want to use XDE (not IDE, it stands for Exponent Development Tools), you can use [exp CLI](https://docs.getexponent.com/versions/v11.0.0/guides/exp-cli.html).
 
+### Usage
+
+```shell
+cd exponent-predict && npm install
+
+lein figwheel
+
+# Now in a new tab, open the project in a simulator
+exp start --ios
+
+# Start an android simulator running API 23
+exp android
+```
+
+See [Using clojurescript guide](https://docs.getexponent.com/versions/unversioned/guides/using-clojurescript.html) in exponent docs.
+See configs therein for Emacs and for Intellij/Cursive.
+
+### Older Usage - these instructions came from initial `lein new exponent exponent-predict`
+
 ``` shell
     yarn install -g exp
 ```
